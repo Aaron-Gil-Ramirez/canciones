@@ -1,0 +1,18 @@
+generator client {
+  provider = "prisma-client-js"
+  output = "../generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model Cancion {
+  id         Int      @id @default(autoincrement())
+  titulo     String
+  descripcion String?
+  reproducida Boolean  @default(false)
+  salidaEn   DateTime @default(now())
+  artista String
+  genero String
+}
