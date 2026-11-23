@@ -105,7 +105,7 @@ function App() {
 
       <CancionForm onCrear={manejarCrear} />
 
-
+      <h2>Canciones ({canciones.length})</h2>
       {cargando && <p>Cargando...</p>}
 
       {!cargando && errorCarga && (

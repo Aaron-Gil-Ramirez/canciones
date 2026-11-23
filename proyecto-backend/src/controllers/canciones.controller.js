@@ -7,6 +7,7 @@ export async function listarCanciones(req, res) {
     });
     res.json(canciones);
   } catch (error) {
+    console.error(error);
     res.status(500).json({ error: "No se pudieron obtener las canciones" });
   }
 }
@@ -28,6 +29,7 @@ export async function obtenerCancion(req, res) {
 
     res.json(cancion);
   } catch (error) {
+    console.error(error);
     res.status(500).json({ error: "No se pudo obtener la canción" });
   }
 }
@@ -52,6 +54,7 @@ export async function crearCancion(req, res) {
 
     res.status(201).json(cancion);
   } catch (error) {
+    console.error(error);
     res.status(500).json({ error: "No se pudo crear la canción" });
   }
 }
@@ -120,6 +123,7 @@ export async function actualizarCancion(req, res) {
 
     res.json(cancion);
   } catch (error) {
+    console.error(error);
     res.status(500).json({ error: "No se pudo actualizar la canción" });
   }
 }
@@ -145,6 +149,7 @@ export async function eliminarCancion(req, res) {
 
     res.status(204).send();
   } catch (error) {
+    console.error(error);
     res.status(500).json({ error: "No se pudo eliminar la canción" });
   }
 }

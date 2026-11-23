@@ -1,8 +1,8 @@
 {
-  "name": "proyecto-backend",
+  "name": "canciones-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js",
     "start:prod": "prisma migrate deploy && node prisma/seed.js && node src/app.js"

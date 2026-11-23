@@ -5,7 +5,7 @@ import {
   crearCancion,
   actualizarCancion,
   eliminarCancion
-} from "../controllers/canciones.controller.js"; // ⚠️ Verifica que este nombre de archivo sea exacto en tu carpeta
+} from "../controllers/canciones.controller.js";
 import { validarCancion } from "../middleware/validarCancion.js";
 import { comprobarApiKey } from "../middleware/apiKey.js";
 
