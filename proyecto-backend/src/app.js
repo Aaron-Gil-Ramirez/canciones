@@ -14,7 +14,6 @@ app.use(cors({ origin: origenes }));   // antes del middleware de x-api-key
 app.use(express.json());
 app.use(logger);
 
-app.get("/", (req, res) => res.json({ estado: "ok" }));
 app.get("/", (req, res) => {
   res.json({
     nombre: "API de canciones",
